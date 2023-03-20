@@ -1,0 +1,182 @@
+.introducao-conteudo{
+padding-bottom: 80px;
+}
+
+.introducao-conteudo{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding-bottom: 80px; 
+position: relative;
+}
+
+.introducao-conteudo::after{
+content: ''; 
+background-image: url("../../intro-bg.svg");
+background-repeat: no-repeat;
+background-size: contain;
+display: block;
+position: absolute;
+width: 370px;
+height: 370px;
+right: 50px;
+}
+
+
+.introducao-texto{
+display: flex;
+flex-direction: column;
+margin-top: 40px;
+align-items: start;
+}
+
+.introducao-texto h1{
+max-width: 17ch;
+text-align: left;
+font-weight: 600;
+text-transform: uppercase;
+min-height: 14rem;
+}
+
+
+
+
+
+.introducao-texto h1::after{
+width: 10px;
+height: 38px;
+background-color: var(--cor-p1);
+content: "";
+margin-left: 10px;
+display: inline-block;
+animation: blink .7s infinite;
+}
+
+
+
+.introducao-conteudo h1::after{
+width: 10px;
+height: 38px;
+background-color: var(--cor-p1);
+content: "";
+margin-left: 10px;
+display: inline-block;
+animation: blink .7s infinite;
+}
+
+
+@keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+
+.introducao-texto p{
+text-align: left;
+max-width: 20ch;
+margin-bottom: 30px;
+}
+
+
+@media(max-width: 900px){
+.introducao-texto h1::after{
+height: 28px;
+}
+
+.introducao-conteudo::after{
+width: 340px;
+height: 340px;
+right: 30px;
+}
+
+.introducao-texto h1{
+min-height: 10.5rem;
+}
+}
+
+
+
+@media(max-width:760px){
+.introducao-conteudo{
+padding-bottom: 60px; 
+}
+
+
+.introducao-conteudo::after{
+width: 300px;
+height: 300px;
+right: 40px;
+}
+
+
+.introducao-texto{
+margin-top: 30px;
+}
+
+
+.introducao-texto h1{
+min-height: 9.5rem;
+}
+}
+
+
+
+@media(max-width: 680px){
+.introducao-conteudo::after{
+width: 290px;
+height: 290px;
+right: 20px;
+}
+
+.introducao-conteudo h1{
+z-index: 1;
+}
+
+}
+
+
+@media(max-width: 550px){
+.introducao-conteudo::after{
+display: none;
+}
+
+
+.introducao-conteudo{
+padding-top: 0px;
+padding-bottom: 40px;
+
+}
+
+.introducao-texto h1::after{
+height: 23px;
+width: 8px;
+}
+
+.introducao-texto h1{
+min-height: 7.5rem;
+}
+}
+
+@media(max-width: 300px){
+.introducao-texto h1{
+max-width: 16ch;
+min-height: 10rem;
+}
+}
+    
+    
+    
+    
+
+
+    
+   
+    
+    
+    
+    
+    
+    

@@ -1,0 +1,98 @@
+.title-jobs {
+color: var(--cor-5);
+text-transform: uppercase;
+font-size: 1.125rem;
+font-family: 'Rubik', sans-serif;
+font-weight: 400;
+line-height: 1.25rem;
+z-index: 10; 
+position: sticky;
+top: 10px;
+width: 100%;
+padding-top: 10px;
+display: flex;
+align-items: center;
+gap: 4px;
+}
+
+
+.jobs-seta{
+display: inline-block;
+animation: setapisca .7s infinite;
+}
+
+@keyframes setapisca{
+  0%, 100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+
+.conteudo{
+height: 380px;
+overflow-y: auto;
+/* scrollbar-width: none; */
+/* -ms-overflow-style: none; */
+scroll-behavior: smooth;
+}
+
+.conteudo::-webkit-scrollbar {
+/* display: none; */
+}
+
+.conteudo picture{
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100%;
+position: sticky;
+top: 0;
+}
+
+
+.img-picture{
+max-width: 100%;
+max-height: 100%;
+}
+
+.mobile-img{
+max-width: 90%;
+max-height: 90%;
+}
+
+.site-img{
+max-width: 70%;
+max-height: 70%;
+}
+
+
+
+
+@media(max-width: 760px){
+
+.title-jobs {
+font-size: 1rem;
+padding-top: 10px;
+}
+
+.img-picture{
+max-width: 80%;
+max-height: 80%;
+}
+
+.site-img{
+max-width: 90%;
+max-height: 90%;
+}
+}
+
+@media(max-width: 550px){
+.mobile-img{
+max-width: 95%;
+max-height: 95%;
+}
+}
